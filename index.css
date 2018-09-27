@@ -1,0 +1,56 @@
+html {
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body {
+	height: 95%;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#banner {
+	width: 100%;
+	height: 50px;
+	background: rgba(192,192,192,0.5);
+
+/*	margin: 0px;
+*/
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+#footer {
+	width: 100%;
+	height: 50px;
+	background: rgba(192,192,192,0.5);
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+#user_area {
+	height: 100%;
+	width: 100%;
+}
+
+#map {
+	float: left;
+	height: 80%;
+	width: 60%;
+	margin-top: 2%;
+	margin-left: 1%;
+/*	margin-right: 50%;*/
+}
+
+#settings_area {
+	float: right;
+	height: 80%;
+	width: 35%;
+	margin-top: 2%;
+	margin-left: 1%;
+	margin-right: 2%;
+}
