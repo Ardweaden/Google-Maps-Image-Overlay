@@ -12,10 +12,10 @@ from PIL import Image
 import os
 import random
 
-x, y = np.mgrid[-1:1:200j, -1:1:200j]
-z = (x+y) * np.exp(-6.0*(x*x+y*y))
-vmin = np.amin(z)
-vmax = np.amax(z)
+# x, y = np.mgrid[-1:1:200j, -1:1:200j]
+# z = (x+y) * np.exp(-6.0*(x*x+y*y))
+# vmin = np.amin(z)
+# vmax = np.amax(z)
 
 ####################################################################################################
 #    User enters either border longitudes and latitudes, or center point and dimensions of rectangle
@@ -354,4 +354,18 @@ def create_edge_image(directory,filename,data,NS_counter,WE_counter,vmin,vmax,wi
     
     
 #create_edge_image("images/testJoin2/","test.png",z,NS_counter,WE_counter,vmin,vmax)
+
+#im = Image.open("C:/Users/dis/Documents/JanJezersek/Google-Maps-Image-Overlay/images/test5/test5.jpg")
+# im = Image.open("C:/Users/dis/Documents/JanJezersek/Google-Maps-Image-Overlay/images/test4/test4.png")
+
+# # sqrWidth = np.ceil(np.sqrt(im.size[0]*im.size[1])).astype(int)
+# # im = im.resize((sqrWidth, sqrWidth))
+# print(im.size)
+# data = np.array(im)
+# data = data.mean(axis=2)
+# vmin = np.amin(data)
+# vmax = np.amax(data)
+
         
+# #multiple_zoom_levels_images_full(data,1,4,"C:/Users/dis/Documents/JanJezersek/Google-Maps-Image-Overlay/images/test5/",vmin,vmax)
+# multiple_zoom_levels_images_area2(data,1,4,(-180,180),(-75,83.7),"C:/Users/dis/Documents/JanJezersek/Google-Maps-Image-Overlay/images/test4/",vmin,vmax)

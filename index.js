@@ -32,7 +32,7 @@ function initMap(){
     getTileUrl: function(coord, zoom) {
     //console.log(zoom);
       console.log("X: " + coord.x + " Y: " + coord.y);
-      return ['images/test2/',zoom,'_',coord.y,'_',coord.x,'.png'].join('')
+      return ['images/test6/',zoom,'_',coord.y,'_',coord.x,'.jpg'].join('')
       //return "images/testJoin/test.png"
     },
     tileSize: new google.maps.Size(256,256)
