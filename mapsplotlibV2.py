@@ -15,6 +15,7 @@ class Overlay:
 		# 	All zoom levels, max longitude and latitude
 		#	vmin,vmax parameters of the colormap
 		#	Directory to which generated images will be saved
+      #  Border latitude and longitude must always be in format (north,south),(west,east)
 		#######################################################################################################
 		self.zoom_start = zoom_start
 		self.zoom_end = zoom_end
@@ -81,24 +82,24 @@ class Overlay:
 
 
 
-test = Overlay()
-test.zoom_start = 1
-test.zoom_end = 4
-test.directory = "C:/Users/dis/Documents/JanJezersek/Google-Maps-Image-Overlay/images/test7/"
-test.imageAsData("C:/Users/dis/Documents/JanJezersek/Google-Maps-Image-Overlay/images/test7/test72.jpg")
-
-print(test.data)
-print(test.data.shape)
-
-test.data = mercator_faster(test.data)
-
-print("\nmercator\n")
-
-fig = plt.figure()
-fig.set_size_inches(1, 1, forward=False)
-ax = plt.Axes(fig, [0., 0., 1., 1.])
-ax.set_axis_off()
-fig.add_axes(ax)
-
-ax.imshow(test.data,interpolation='bessel',vmin=test.vmin,vmax=test.vmax)
+#test = Overlay()
+#test.zoom_start = 1
+#test.zoom_end = 4
+#test.directory = "C:/Users/dis/Documents/JanJezersek/Google-Maps-Image-Overlay/images/test7/"
+#test.imageAsData("C:/Users/dis/Documents/JanJezersek/Google-Maps-Image-Overlay/images/test7/test72.jpg")
+#
+#print(test.data)
+#print(test.data.shape)
+#
+#test.data = mercator_faster(test.data)
+#
+#print("\nmercator\n")
+#
+#fig = plt.figure()
+#fig.set_size_inches(1, 1, forward=False)
+#ax = plt.Axes(fig, [0., 0., 1., 1.])
+#ax.set_axis_off()
+#fig.add_axes(ax)
+#
+#ax.imshow(test.data,interpolation='bessel',vmin=test.vmin,vmax=test.vmax)
 #plt.savefig(test.directory,dpi=1000) 
